@@ -61,10 +61,10 @@ def check_soil_moisture():
     GPIO.cleanup()
 
 # Function to call check_soil_moisture() every 30 seconds
-def c():
+def t():
     while True:
         check_soil_moisture()
         time.sleep(30)
 
 # Call the function to check soil moisture every 30 seconds
-c()
+t()
